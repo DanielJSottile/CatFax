@@ -1,22 +1,22 @@
 <template>
-  <div class="about">
-    <AboutText />
+  <div class="facts">
+    <FactsList />
   </div>
 </template>
 
 <script>
-import AboutText from "@/components/AboutText.vue";
+import FactsList from "@/components/FactsList.vue";
 
 export default {
-  name: "About",
+  name: "Facts",
   components: {
-    AboutText
+    FactsList
   }
 };
 </script>
 
 <style scoped>
-.about {
+.facts {
   text-align: center;
   margin: auto;
 }

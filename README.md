@@ -1,4 +1,4 @@
-# vue-demo
+# CatFax
 
 ## Project setup
 ```
