@@ -1,6 +1,6 @@
 import { doGet } from "./apiService";
 
-const baseUrl = "http://cat-fact.herokuapp.com";
+const baseUrl = "https://cat-fact.herokuapp.com";
 const serviceUrl = "/facts";
 
 export const getAllFacts = () => {
