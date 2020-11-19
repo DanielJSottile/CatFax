@@ -12,14 +12,12 @@ const getters = {};
 const actions = {
   getFacts({ commit }) {
     getAllFacts().then(data => {
-      console.log(data);
       commit("setAllFacts", data.all);
     });
   },
 
   getFact({ commit }) {
     getRandomFact().then(data => {
-      console.log(data);
       commit("setFact", data);
     });
   }
