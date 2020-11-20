@@ -25,7 +25,9 @@
         Toggle Dark Mode <i class="fas fa-moon"></i>
       </button>
     </div>
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
     <footer>Daniel Sottile | Cat Fax © 2020</footer>
   </div>
 </template>
@@ -154,5 +156,14 @@ a:hover,
   color: #444444;
   background-color: #eeeeee;
   transition: 0.8s;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
